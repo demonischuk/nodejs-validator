@@ -34,6 +34,9 @@ module.exports = (() => {
                         (typeof match === "string" && match === ""))) {
                     addIssue(rule, "Field is required");
                 }
+                else if (typeof rule.min === "number" && typeof match === "number" && match < rule.min) {
+                    addIssue(rule, `Must be greater than or equal to ${rule.min}`);
+                }
             }
 
             return new ValidationResponse(issues.length === 0, issues);
