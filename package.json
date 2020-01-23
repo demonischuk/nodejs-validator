@@ -1,0 +1,17 @@
+{
+  "name": "demonisch-validator",
+  "version": "1.0.0",
+  "description": "Validate requests submitted to a restful Api",
+  "main": "validator.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
+}
